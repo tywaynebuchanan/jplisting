@@ -5,50 +5,57 @@
 
 
 
-<div class="container">
-  <input class = "btn btn-primary"type="submit" name="submit" value = "Spanish Town">
-</div>
-<div>
+
+
+
 <div class="container text-center">
-  <div class="col-sm-6 text-center">
-    <a href="#"><h1 class="text-center">Search for a Justice of the Peace</h1></a> 
-    <form action="index.php" method = "get">
-      <div class="form-group">
-        <label for = "keyword">Name</label>
-        <input type="text" name = "keyword" class="form-control"></input>
-      </div>
-     
-      <input class = "btn btn-primary"type="submit" name="submit" value = "Search">
-    </form>
-
-  </div>
+<h2> Select the Parish that the Justice of the Peace resides</h2>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">Kingston</button>
 </div>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">St Andrew</button>
+</div>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">St Thomas</button>
+</div>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">Portland</button>
+</div>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">St Mary </button>
+</div>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">St Ann</button>
+</div>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">Trelawny</button>
+</div>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">St James</button>
+</div>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">Westmoreland</button>
 </div>
 
-<div class="container"></div>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">St Elizabeth</button>
+</div>
 
-<div class="container">
-<div class=" table">
-      <table class="text-center">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Last Name</th>
-            <th>First Name</th>
-            <th>Address</th>
-            <th>City</th>
-            <th>Phone Number</th>
-          </tr>
-        </thead>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">Manchester</button>
+</div>
 
-        <tbody>
-       
-       <?php SearchDB(); ?>
 
-        </tbody>
-      </table>
-    </div>
-  </div>
+<div style="padding: 10px 10px;">
+<button type="button" class="btn btn-primary">Clarendon</button>
+
+</div>
+
+<div style="padding: 10px 10px;">
+<a href="landing.php"><button type="button" class="btn btn-primary">St Catherine</button></a>
+
+</div>
 
 
 

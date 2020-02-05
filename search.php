@@ -8,7 +8,7 @@ if (isset($_GET['submit'])) {
 			$q = $conn->real_escape_string($_GET['keyword']);
 			
 
-			$sql = $conn->query("SELECT * FROM tbljplisting WHERE LastName LIKE '%$q%'");
+			$sql = $conn->query("SELECT * FROM tbljplisting WHERE LastName LIKE '%$q%' AND City = 'Spanish Town';");
 			
 			if ($sql->num_rows > 0) {
 				while ($row = $sql->fetch_assoc())
