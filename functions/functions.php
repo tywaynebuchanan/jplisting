@@ -4,11 +4,11 @@
 function SearchDB(){
 	global $conn;
 if (isset($_GET['submit'])) {
-			
+			$conn = new mysqli('localhost', 'root', '', 'listing');
 			$q = $conn->real_escape_string($_GET['keyword']);
 			
 
-			$sql = $conn->query("SELECT * FROM tbljplisting WHERE LastName LIKE '%$q%'");
+			$sql = $conn->query("SELECT * FROM tbljplisting WHERE LastName LIKE '%$q%' AND City = 'Spanish Town';");
 			
 			if ($sql->num_rows > 0) {
 				while ($row = $sql->fetch_assoc())
@@ -16,9 +16,9 @@ if (isset($_GET['submit'])) {
 						. $row["FirstName"]. "</td><td>".$row["Address"]. "</td><td>". $row["City"]."</td><td>". $row["PhoneNumber"]."</td></tr>";
 					echo "</table>";
 			}else{
-				echo ($_GET['keyword']).'No records found for that Justice of the Peace';}
+				echo ($_GET['keyword']).' There is no Justice of the Peace by that name';}
 			}
-
 }
+
 
 ?>
