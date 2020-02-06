@@ -35,7 +35,7 @@
 
 
 <div class="container text-center">
-<div class="table">
+<div class="table text-center">
       <table class="text-center">
         <thead>
           <tr>
